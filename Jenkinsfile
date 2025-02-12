@@ -13,7 +13,7 @@ pipeline {
             steps {
                 // Install the dependencies for your Node.js app
                 script {
-                    sh 'npm install'
+                    powershell 'npm install'
                 }
             }
         }
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 // Run tests with npm
                 script {
-                    sh 'npm test'
+                    powershell 'npm test'
                 }
             }
         }
