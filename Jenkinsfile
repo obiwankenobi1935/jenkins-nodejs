@@ -7,12 +7,7 @@ pipeline {
     // }
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Checkout the code from the Git repository
-                git 'https://github.com/obiwankenobi1935/jenkins-nodejs.git'
-            }
-        }
+      
 
         stage('Install Dependencies') {
             steps {
